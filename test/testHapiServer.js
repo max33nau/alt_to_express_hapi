@@ -15,19 +15,14 @@ describe('alternative to express using hapi/mongooose mongo ', function() {
   var dbInfo = startDB();
 
 
-  before(function(done) {
+  before(function(done, done1) {
     startServer(done);
-    dbInfo.start(done);
+    dbInfo.start(done1);
   });
-
-
 
   it('should put a new file in the data folder', function() {
 
   });
 
 
-  after(function(done) {
-
-  }
 });
