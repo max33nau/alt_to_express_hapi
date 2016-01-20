@@ -1,0 +1,34 @@
+doctype
+html
+  head
+    title hapi
+  body(style='text-align: center')
+    header
+      h1 Please enter your name and your favorite sport:
+    br
+    br
+    form(method='POST')
+      div Username:
+        input(name='username')
+      br
+      div Favorite sport:
+        input(name='sport')
+      br
+      input(type='submit')
+      br
+      br
+      br
+    h4 If you have had a change of heart on your favorite sport, enter your user name and your new favorite sport.
+    form(method='GET')
+      div Username:
+        input(name='username')
+      br
+      div Updated Favorite Sport:
+        input(name='newsport')
+      br
+      input(type='submit' value='Update')
+      div *** IMPORTANT **** after clicking Update add a /update after sport in the url and click enter
+      br
+      br
+    footer
+      h6 @MaxJacobsen
